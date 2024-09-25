@@ -1,8 +1,11 @@
-/* Top NavBar design */
-#top-nav ul.info-list {
+.ul-normal {
     list-style-type: none;
     padding: 0;
     margin: 0;
+}
+
+/* Top NavBar design */
+#top-nav ul.info-list {
     display: inline-flex;
     align-items: center;
     min-height: 45px;
@@ -18,4 +21,62 @@
     color: black;
 }
 
-/* Top NavBar design end */
+/* Mobile NavBar menu */
+.mobile-navbar .container {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+.mobile-navbar .container .logo a img {
+    width: 3.125rem;
+    padding: 0.313rem;
+}
+
+.mobile-navbar .container .icon-list a {
+    margin-left: 0.523rem;
+    cursor: pointer;
+    border-left: 1px solid rgba(60, 60, 60, 0.1);
+    padding-left: 1rem;
+    line-height: 3rem;
+}
+
+.mobile-navbar .container .icon-list a > i {color: rgba(60, 60, 60, 1)}
+
+/* NavBar menu */
+#main-navbar a.logo img {
+    width: 6rem;
+    height: auto;
+}
+
+#main-navbar .icon-links .menu-list a {
+    color: rgba(60, 60, 60, 1);
+    margin-left: 1.75rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#main-navbar .icon-links .menu-list a:hover {
+    color: black
+}
+
+#main-navbar .icon-links .icon-list a {
+    margin-left: 0.523rem;
+    cursor: pointer;
+}
+
+.icon-links .icon-list > a:first-child {
+    margin: 0 1.625rem 0 1.125rem;
+}
+
+#main-navbar .main-links ul.navbar-nav li a {
+    color: rgba(60, 60, 60, 1);
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+    margin-left: 2.578rem;
+    text-decoration: none;
+}
+
+#main-navbar .main-links ul.navbar-nav li a:hover {
+    color: black;
+}

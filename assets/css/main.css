@@ -46,26 +46,16 @@ html, body{
     background-color: var(--bs-primary) !important;
 }
 
-/* Custom styling */
-.navbar {
-    background-color: #2C3E50;
-    padding: 1rem;
+/* Mobile offCanvas link list design */
+.list-group-item a {
+    text-decoration: none;
+    display: block;
+    color: rgba(60, 60, 60, 0.9);
 }
 
-.icon-links a, .secondary-links a, .main-links a {
-    color: white;
-    margin-left: 15px;
-}
+.list-group-item a:hover {color: rgba(60, 60, 60, 1)}
 
-.main-links {
-    margin-top: 5px;
-}
-
-/* Responsive behavior */
-@media (max-width: 992px) {
-    .icon-links, .main-links {
-        justify-content: center;
-        flex-direction: column;
-        text-align: center;
-    }
+/* TODO: remove this */
+.container {
+    /*border: 1px solid tomato;*/
 }
