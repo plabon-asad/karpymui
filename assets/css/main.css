@@ -1,0 +1,71 @@
+:root {
+    --base-font-family: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue";
+    --outfit-font-family: "Outfit", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue";
+    --base-font-size: 16px; /* 16px = 1 rem */
+    --bs-primary: rgba(212, 240, 212, 1); /* Set primary color */
+    --bs-primary-dark: rgba(212, 240, 212, 0.9); /* Set primary color */
+    --bs-secondary: rgba(52, 104, 192, 1);
+    --bs-secondary-dark: rgba(52, 104, 192, 0.9);
+
+}
+
+html, body{
+    font-family: var(--base-font-family), serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased; /* Improve rendering on WebKit browsers */
+    -moz-osx-font-smoothing: grayscale;  /* Improve rendering on macOS Firefox */
+}
+
+/* Bootstrap reset */
+.btn-primary {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+    color: black;
+}
+
+.btn-primary:hover {
+    background-color: var(--bs-primary-dark);
+    border-color: var(--bs-primary-dark);
+    color: black;
+}
+
+.btn-secondary {
+    background-color: var(--bs-secondary);
+    border-color: var(--bs-secondary);
+}
+
+.btn-secondary:hover {
+    background-color: var(--bs-secondary-dark);
+    border-color: var(--bs-secondary-dark);
+}
+
+.bg-primary {
+    background-color: var(--bs-primary) !important;
+}
+
+/* Custom styling */
+.navbar {
+    background-color: #2C3E50;
+    padding: 1rem;
+}
+
+.icon-links a, .secondary-links a, .main-links a {
+    color: white;
+    margin-left: 15px;
+}
+
+.main-links {
+    margin-top: 5px;
+}
+
+/* Responsive behavior */
+@media (max-width: 992px) {
+    .icon-links, .main-links {
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+}
