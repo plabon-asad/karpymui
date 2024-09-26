@@ -35,6 +35,10 @@ html, body{
 .btn-secondary {
     background-color: var(--bs-secondary);
     border-color: var(--bs-secondary);
+    font-weight: 700;
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+    padding: 1.25rem 3.75rem;
 }
 
 .btn-secondary:hover {
@@ -44,6 +48,14 @@ html, body{
 
 .bg-primary {
     background-color: var(--bs-primary) !important;
+}
+
+.heading2 {
+    font-family: var(--outfit-font-family), sans-serif;
+    font-weight: 250;
+    font-size: 2.813rem;
+    line-height: 3.875rem;
+    color: rgba(20, 21, 21, 1);
 }
 
 /* Mobile offCanvas link list design */

@@ -93,4 +93,21 @@
     overflow: hidden;
 }
 
+.work-time {
+    background: tomato;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    transform: translate(0%, 60%);
+}
+
+/* Attention section */
+#attention .attention-row {
+    min-height: 20rem;
+    @media (max-width: 75rem) {
+        min-height: auto;
+    }
+}
+
+
 
