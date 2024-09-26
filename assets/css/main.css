@@ -56,6 +56,7 @@ html, body{
     font-size: 2.813rem;
     line-height: 3.875rem;
     color: rgba(20, 21, 21, 1);
+    margin: 0;
 }
 
 /* Mobile offCanvas link list design */
@@ -66,6 +67,32 @@ html, body{
 }
 
 .list-group-item a:hover {color: rgba(60, 60, 60, 1)}
+
+/* Title design with link */
+a.title-with-link {
+    color: #3C3C3C;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.75rem;
+    line-height: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+a.title-with-link:hover {
+    color: var(--bs-secondary);
+}
+
+a.title-with-link span {
+    padding-right: 1.798rem;
+}
+
+.title-cols {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    /*border: 1px solid tomato;*/
+}
 
 /* TODO: remove this */
 .container {
