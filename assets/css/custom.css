@@ -41,7 +41,9 @@
     line-height: 3rem;
 }
 
-.mobile-navbar .container .icon-list a > i {color: rgba(60, 60, 60, 1)}
+.mobile-navbar .container .icon-list a > i {
+    color: rgba(60, 60, 60, 1)
+}
 
 /* NavBar menu */
 #main-navbar a.logo img {
@@ -80,3 +82,15 @@
 #main-navbar .main-links ul.navbar-nav li a:hover {
     color: black;
 }
+
+/* Banner design */
+.carousel-item {
+    min-height: 36.375rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top-right-radius: 7.5rem;
+    overflow: hidden;
+}
+
+
