@@ -272,6 +272,14 @@ section#about-us {
 /* Footer design */
 #footer {
     min-height: 26.25rem;
+    position: relative;
+    overflow: hidden;
+}
+
+#footer img.img-bg-right {
+    position: absolute;
+    right: -6rem;
+    bottom: 0rem;
 }
 
 .location-wrap h4.f-heading {
