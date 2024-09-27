@@ -224,8 +224,59 @@ section#about-us {
 
 /* Footer design */
 #footer {
-    min-height: 420px;
+    min-height: 26.25rem;
 }
+
+.location-wrap h4.f-heading {
+    margin-bottom: 1.25rem;
+}
+
+.location-wrap .address {
+    color: #3C3C3C;
+}
+
+.location-wrap .address > a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #3C3C3C;
+}
+
+.time-table {
+    display: flex;
+    gap: 1rem;
+}
+
+.time-table .left-col-time li time {
+    color: #3C3C3C
+}
+
+.informations ul li a {
+    color: #3C3C3C;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul.social-links {
+    display: inline-flex;
+    gap: 1rem;
+    margin-top: 30px;
+}
+
+ul.social-links li a {
+    display: inline-block;
+    font-size: 2rem;
+    color: var(--bs-primary);
+    background-color: var(--bs-secondary);
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 3.5rem;
+    overflow: hidden;
+}
+
+ul.social-links li a:hover {background-color: var(--bs-secondary-dark)}
 
 
 
