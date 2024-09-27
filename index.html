@@ -20,6 +20,9 @@
 
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkSPW5wjZ9ujfZps4rcKYYbIAUtFA95DM&callback=initMap" async defer></script>
+
 </head>
 <body>
 <!-- Top NavBar -->
@@ -413,6 +416,59 @@
         <img class="img-bg-left" src="./assets/img/about-us__left-bg.png" alt="About us bg left img">
     </div>
 </section>
+
+<section id="google-map">
+    <div class="map-wrap">
+        <!--The div element for the map -->
+        <div id="map"></div>
+
+        <!-- prettier-ignore -->
+        <script>
+            (g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})({
+                key: "AIzaSyCkSPW5wjZ9ujfZps4rcKYYbIAUtFA95DM",
+                v: "weekly",
+                // Use the 'v' parameter to indicate the version to use (weekly, beta, alpha, etc.).
+                // Add other bootstrap parameters as needed, using camel case.
+            });
+        </script>
+
+        <script type="text/javascript">
+            // Initialize the Google Map
+            function initMap() {
+                // Specify the location (latitude and longitude)
+                var location = { lat: 37.7749, lng: -122.4194 }; // Example: San Francisco coordinates
+
+                // Create the map
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 12,
+                    center: location
+                });
+
+                // Custom marker icon
+                var customIcon = {
+                    url: 'https://example.com/custom-icon.png', // URL to your custom marker image
+                    scaledSize: new google.maps.Size(50, 50) // Scale the icon to appropriate size
+                };
+
+                // Add the marker
+                var marker = new google.maps.Marker({
+                    position: location,
+                    map: map,
+                    icon: customIcon // Apply the custom icon
+                });
+            }
+
+            // Initialize the map when the page is loaded
+            window.initMap = initMap;
+        </script>
+    </div>
+</section>
+
+<footer id="footer" class="bg-primary py-5">
+    <div class="container">
+        <h2>working on it...</h2>
+    </div>
+</footer>
 
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>

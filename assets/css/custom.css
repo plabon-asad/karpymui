@@ -215,5 +215,17 @@ section#about-us {
     }
 }
 
+/* Google map */
+#map {
+    width: 100%;
+    height: 430px;
+    border-top-left-radius: 7.5rem;
+}
+
+/* Footer design */
+#footer {
+    min-height: 420px;
+}
+
 
 
