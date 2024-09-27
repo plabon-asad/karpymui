@@ -138,5 +138,82 @@
     color: #141515;
 }
 
+/* About us section */
+.img-wrap {
+    position: relative;
+}
+
+.img-wrap img.img-sm {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    max-width: 290px;
+    height: auto;
+    transform: translate(0%, 12%);
+}
+
+.img-wrap img {
+    height: auto;
+    max-width: 420px;
+    @media (max-width: 1000px) {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* About us bg-img design */
+.bg-img img {
+    /* position: absolute; */
+}
+
+.bg-img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    @media (max-width: 770px) {
+        overflow: hidden;
+    }
+}
+
+section#about-us {
+    position: relative;
+}
+
+.bg-img img.img-bg-right {
+    position: absolute;
+    right: 0;
+    top: -7.5rem;
+    @media (max-width: 1300px) {
+        top: -3rem;
+    }
+
+    @media (max-width: 770px) {
+        top: -2rem;
+        right: -10rem;
+        width: 70%;
+    }
+
+    @media (max-width: 480px) {
+        top: 0;
+        right: -7rem;
+    }
+}
+
+.bg-img img.img-bg-left {
+    position: absolute;
+    left: 0;
+    top: -4rem;
+    width: 20%;
+    @media (max-width: 770px) {
+        top: 0;
+        left: 0;
+        width: 150px;
+    }
+}
+
 
 
