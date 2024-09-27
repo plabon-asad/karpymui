@@ -155,8 +155,8 @@
 
 .img-wrap img {
     height: auto;
-    max-width: 420px;
-    @media (max-width: 1000px) {
+    max-width: 26.25rem;
+    @media (max-width: 62.5rem) {
         max-width: 100%;
         height: auto;
     }
@@ -174,7 +174,7 @@
     right: 0;
     left: 0;
     z-index: -1;
-    @media (max-width: 770px) {
+    @media (max-width: 48.125rem) {
         overflow: hidden;
     }
 }
@@ -187,17 +187,17 @@ section#about-us {
     position: absolute;
     right: 0;
     top: -7.5rem;
-    @media (max-width: 1300px) {
+    @media (max-width: 81.25rem) {
         top: -3rem;
     }
 
-    @media (max-width: 770px) {
+    @media (max-width: 48.125rem) {
         top: -2rem;
         right: -10rem;
         width: 70%;
     }
 
-    @media (max-width: 480px) {
+    @media (max-width: 30rem) {
         top: 0;
         right: -7rem;
     }
@@ -208,7 +208,7 @@ section#about-us {
     left: 0;
     top: -4rem;
     width: 20%;
-    @media (max-width: 770px) {
+    @media (max-width: 48.125rem) {
         top: 0;
         left: 0;
         width: 150px;

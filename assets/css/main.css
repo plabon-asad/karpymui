@@ -9,14 +9,14 @@
 
 }
 
-html, body{
+html, body {
     font-family: var(--base-font-family), serif;
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased; /* Improve rendering on WebKit browsers */
-    -moz-osx-font-smoothing: grayscale;  /* Improve rendering on macOS Firefox */
+    -moz-osx-font-smoothing: grayscale; /* Improve rendering on macOS Firefox */
 }
 
 /* Bootstrap reset */
@@ -66,7 +66,9 @@ html, body{
     color: rgba(60, 60, 60, 0.9);
 }
 
-.list-group-item a:hover {color: rgba(60, 60, 60, 1)}
+.list-group-item a:hover {
+    color: rgba(60, 60, 60, 1)
+}
 
 /* Title design with link */
 a.title-with-link {
@@ -102,6 +104,7 @@ a.title-with-link span {
     /*color: #141515;*/
 
 }
+
 .f-heading-with-line {
     font-family: var(--outfit-font-family), sans-serif;
     font-weight: 400;
@@ -126,7 +129,22 @@ a.title-with-link span {
     margin-bottom: 35px;
 }
 
-/* TODO: remove this */
-.container {
-    /*border: 1px solid tomato;*/
+/* Copyright section */
+#copyright ul {
+    display: inline-flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+#copyright {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    color: #808287;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    @media (max-width: 48.125rem) {
+        flex-flow: column;
+    }
 }
