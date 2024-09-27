@@ -19,6 +19,20 @@ html, body {
     -moz-osx-font-smoothing: grayscale; /* Improve rendering on macOS Firefox */
 }
 
+/* Scrollbar UI */
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+
 /* Bootstrap reset */
 .btn-primary {
     background-color: var(--bs-primary);
@@ -122,7 +136,7 @@ a.title-with-link span {
     right: 10rem;
     height: 2px;
     width: 75px;
-    background-color: blue;
+    background-color: #3468C0;
 }
 
 .footer-title > h4 {
