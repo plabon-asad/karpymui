@@ -400,6 +400,7 @@ ul.contact-infos li {
     border-bottom-left-radius: 20px;
     text-decoration: none;
     color: #141515;
+    background-color: white;
 }
 
 .situation-item:hover {
@@ -435,6 +436,27 @@ a.situation-item svg {
 .institutional-values .para {
     font-size: 1.125rem;
     line-height: 1.75rem;
+}
+
+/* About us side nav menu */
+.about-us-nav-tabs {
+    max-height: 430px;
+}
+
+ul.item-list li div {
+    padding-left: 30px;
+}
+
+ul.item-list li svg {
+    float: left;
+    margin-top: 0.3rem;
+}
+
+ul.ul-normal.item-list li {
+    clear: both;
+    overflow: hidden;
+    /*border: 1px solid tomato;*/
+    margin-bottom: 1rem;
 }
 
 

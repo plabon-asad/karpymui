@@ -103,6 +103,40 @@ html {
 
 }
 
+/* Nav and Pills reset */
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: transparent;
+    color: var(--bs-secondary);
+}
+
+.nav-parent > a {
+    color: #141515;
+    font-family: var(--outfit-font-family), sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.nav-pills .nav-parent > a {
+    border-bottom: 1px solid #0000001A;
+    border-radius: inherit;
+}
+
+.nav-pills .nav-parent:first-child > a {
+    border-bottom: 2px solid var(--bs-secondary);
+}
+
+.nav-pills .nav-parent:last-child > a {
+    border-bottom: inherit;
+}
+
+.nav-children li > a {
+    color: #3C3C3C;
+    line-height: 1.438rem;
+}
+
 .heading2 {
     font-family: var(--outfit-font-family), sans-serif;
     font-weight: 250;
@@ -119,6 +153,11 @@ html {
     line-height: 2.125rem;
     color: rgba(20, 21, 21, 1);
     margin: 0;
+}
+
+.font-18 {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
 }
 
 /* Mobile offCanvas link list design */
