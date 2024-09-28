@@ -345,7 +345,7 @@ ul.social-links li a:hover {
 
 /* About us page UI */
 .sub-banner {
-    background-image: url('/assets/img/sub-banner-bg.png');
+    background-image: url(/assets/img/sub-banner-bg.png);
     background-color: var(--bs-primary-dark);
     background-size: cover;
     background-repeat: no-repeat;
