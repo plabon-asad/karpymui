@@ -429,8 +429,12 @@ a.situation-item svg {
     top: 3rem;
     width: 37.5rem;
     height: 28.25rem;
+}
 
-
+/* Institutional values section */
+.institutional-values .para {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
 }
 
 
