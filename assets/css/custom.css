@@ -161,8 +161,16 @@
     /*border: 1px solid tomato;*/
     display: flex;
     flex-flow: column;
-    min-height: 26.5rem;
+    /*min-height: 26.5rem;*/
     justify-content: space-between;
+}
+
+.post-item-height {
+    min-height: 26.5rem;
+}
+
+.service-item-height {
+    min-height: 23rem;
 }
 
 .post-item .post-content img {
@@ -331,7 +339,43 @@ ul.social-links li a {
     overflow: hidden;
 }
 
-ul.social-links li a:hover {background-color: var(--bs-secondary-dark)}
+ul.social-links li a:hover {
+    background-color: var(--bs-secondary-dark)
+}
 
+/* About us page UI */
+.sub-banner {
+    background-image: url('/assets/img/sub-banner-bg.png');
+    background-color: var(--bs-primary-dark);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 13rem;
+    color: #fff;
+    border-top-right-radius: 7.5rem;
+}
+
+.sub-banner-title {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    gap: 0.2rem;
+    min-height: 13rem;
+}
+
+.sub-banner-title h2 {
+    color: white;
+}
+
+.sub-banner-title a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul.history-links {
+    display: flex;
+    gap: 0.5rem;
+}
 
 
