@@ -378,4 +378,40 @@ ul.history-links {
     gap: 0.5rem;
 }
 
+/* Contact us */
+ul.contact-infos {
+    margin-top: 1.5rem;
+}
+
+ul.contact-infos li {
+    color: #141515;
+    font-size: 18px;
+    font-weight: 400;
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Situation section */
+.situation-item {
+    display: block;
+    padding: 1rem;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    text-decoration: none;
+    color: #141515;
+}
+
+.situation-item:hover {
+    background-color: var(--bs-primary);
+    cursor: pointer;
+}
+
+a.situation-item svg {
+    width: 40px;
+    margin-right: 1rem;
+}
+
+
+
 
