@@ -412,6 +412,27 @@ a.situation-item svg {
     margin-right: 1rem;
 }
 
+/* Other info section */
+.other-info {
+    position: relative;
+    overflow: hidden;
+}
+
+.other-info:before {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    background-image: url('/assets/img/other-info-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 0;
+    top: 3rem;
+    width: 37.5rem;
+    height: 28.25rem;
+
+
+}
+
 
 
 
